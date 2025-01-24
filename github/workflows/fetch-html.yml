@@ -13,5 +13,5 @@ jobs:
 
     - name: fetch website html
       run: |
-        curl -o output.html "https://example.com"
+        curl -o output.html "https://gorillatagvr.net/getaccountinfo.php"
         cat output.html
