@@ -11,7 +11,7 @@ jobs:
     - name: checkout code
       uses: actions/checkout@v3
 
-    - name: fetch website html
+    - name: fetch website html with headers and cookies
       run: |
-        curl -o output.html "https://gorillatagvr.net/getaccountinfo.php"
+        curl -o output.html -H "User-Agent: Mozilla/5.0" -H "Accept: text/html" -H "Cookie: your_cookie_here" "https://gorillatagvr.net/getaccountinfo.php"
         cat output.html
